@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="app_preset_prof_preset_name">BasOperdefService Launch Configuration</entry>
+<entry key="app_preset_prof_preset_filter_s"/>
+<entry key="app_preset_prof_preset_filter_p">cn.com.winning.*,
+com.digihealth.anesthesia.basedata.config.*,
+com.digihealth.anesthesia.basedata.controller.*,
+com.digihealth.anesthesia.basedata.dao.*,
+com.digihealth.anesthesia.basedata.formbean.*,
+com.digihealth.anesthesia.basedata.listener.*,
+com.digihealth.anesthesia.basedata.po.*,
+com.digihealth.anesthesia.basedata.service.*,
+com.digihealth.anesthesia.basedata.utils.*,
+com.digihealth.anesthesia.common.beanvalidator.*,
+com.digihealth.anesthesia.common.config.*,
+com.digihealth.anesthesia.common.entity.*,
+com.digihealth.anesthesia.common.exception.*,
+com.digihealth.anesthesia.common.interceptor.*,
+com.digihealth.anesthesia.common.jwt.*,
+com.digihealth.anesthesia.common.listener.*,
+com.digihealth.anesthesia.common.mapper.*,
+com.digihealth.anesthesia.common.persistence.*,
+com.digihealth.anesthesia.common.security.*,
+com.digihealth.anesthesia.common.service.*,
+com.digihealth.anesthesia.common.task.*,
+com.digihealth.anesthesia.common.utils.*,
+com.digihealth.anesthesia.common.web.*,
+com.digihealth.anesthesia.doc.controller.*,
+com.digihealth.anesthesia.doc.dao.*,
+com.digihealth.anesthesia.doc.formbean.*,
+com.digihealth.anesthesia.doc.po.*,
+com.digihealth.anesthesia.doc.service.*,
+com.digihealth.anesthesia.evt.controller.*,
+com.digihealth.anesthesia.evt.dao.*,
+com.digihealth.anesthesia.evt.formbean.*,
+com.digihealth.anesthesia.evt.po.*,
+com.digihealth.anesthesia.evt.service.*,
+com.digihealth.anesthesia.inspect.controller.*,
+com.digihealth.anesthesia.inspect.dao.*,
+com.digihealth.anesthesia.inspect.formbean.*,
+com.digihealth.anesthesia.inspect.po.*,
+com.digihealth.anesthesia.inspect.service.*,
+com.digihealth.anesthesia.interfacedata.controller.*,
+com.digihealth.anesthesia.interfacedata.formbean.*,
+com.digihealth.anesthesia.interfacedata.po.*,
+com.digihealth.anesthesia.interfacedata.server.*,
+com.digihealth.anesthesia.interfacedata.service.*,
+com.digihealth.anesthesia.operProceed.controller.*,
+com.digihealth.anesthesia.operProceed.core.*,
+com.digihealth.anesthesia.operProceed.dao.*,
+com.digihealth.anesthesia.operProceed.datasync.*,
+com.digihealth.anesthesia.operProceed.formbean.*,
+com.digihealth.anesthesia.operProceed.po.*,
+com.digihealth.anesthesia.operProceed.service.*,
+com.digihealth.anesthesia.pacu.core.*,
+com.digihealth.anesthesia.pacu.datasync.*,
+com.digihealth.anesthesia.research.controller.*,
+com.digihealth.anesthesia.research.dao.*,
+com.digihealth.anesthesia.research.formbean.*,
+com.digihealth.anesthesia.research.po.*,
+com.digihealth.anesthesia.research.service.*,
+com.digihealth.anesthesia.research.utils.*,
+com.digihealth.anesthesia.sco.dao.*,
+com.digihealth.anesthesia.sco.po.*,
+com.digihealth.anesthesia.sysMng.controller.*,
+com.digihealth.anesthesia.sysMng.dao.*,
+com.digihealth.anesthesia.sysMng.formbean.*,
+com.digihealth.anesthesia.sysMng.po.*,
+com.digihealth.anesthesia.sysMng.service.*,
+com.digihealth.anesthesia.tmp.controller.*,
+com.digihealth.anesthesia.tmp.dao.*,
+com.digihealth.anesthesia.tmp.formbean.*,
+com.digihealth.anesthesia.tmp.po.*,
+com.digihealth.anesthesia.tmp.service.*,
+com.digihealth.anesthesia.websocket.*,
+org.tempuri.*,
+org.tempurl.*,
+swagger.*</entry>
+<entry key="app_preset_prof_preset_alloc_p">10</entry>
+<entry key="app_preset_"/>
+<entry key="app_preset_prof_preset_samplingRefreshRate_s">1000</entry>
+<entry key="app_preset_prof_preset_stacks_p">false</entry>
+<entry key="app_preset_prof_preset_roots_p">cn.com.winning.**
+com.digihealth.anesthesia.basedata.config.**
+com.digihealth.anesthesia.basedata.controller.**
+com.digihealth.anesthesia.basedata.dao.**
+com.digihealth.anesthesia.basedata.formbean.**
+com.digihealth.anesthesia.basedata.listener.**
+com.digihealth.anesthesia.basedata.po.**
+com.digihealth.anesthesia.basedata.service.**
+com.digihealth.anesthesia.basedata.utils.**
+com.digihealth.anesthesia.common.beanvalidator.**
+com.digihealth.anesthesia.common.config.**
+com.digihealth.anesthesia.common.entity.**
+com.digihealth.anesthesia.common.exception.**
+com.digihealth.anesthesia.common.interceptor.**
+com.digihealth.anesthesia.common.jwt.**
+com.digihealth.anesthesia.common.listener.**
+com.digihealth.anesthesia.common.mapper.**
+com.digihealth.anesthesia.common.persistence.**
+com.digihealth.anesthesia.common.security.**
+com.digihealth.anesthesia.common.service.**
+com.digihealth.anesthesia.common.task.**
+com.digihealth.anesthesia.common.utils.**
+com.digihealth.anesthesia.common.web.**
+com.digihealth.anesthesia.doc.controller.**
+com.digihealth.anesthesia.doc.dao.**
+com.digihealth.anesthesia.doc.formbean.**
+com.digihealth.anesthesia.doc.po.**
+com.digihealth.anesthesia.doc.service.**
+com.digihealth.anesthesia.evt.controller.**
+com.digihealth.anesthesia.evt.dao.**
+com.digihealth.anesthesia.evt.formbean.**
+com.digihealth.anesthesia.evt.po.**
+com.digihealth.anesthesia.evt.service.**
+com.digihealth.anesthesia.inspect.controller.**
+com.digihealth.anesthesia.inspect.dao.**
+com.digihealth.anesthesia.inspect.formbean.**
+com.digihealth.anesthesia.inspect.po.**
+com.digihealth.anesthesia.inspect.service.**
+com.digihealth.anesthesia.interfacedata.controller.**
+com.digihealth.anesthesia.interfacedata.formbean.**
+com.digihealth.anesthesia.interfacedata.po.**
+com.digihealth.anesthesia.interfacedata.server.**
+com.digihealth.anesthesia.interfacedata.service.**
+com.digihealth.anesthesia.operProceed.controller.**
+com.digihealth.anesthesia.operProceed.core.**
+com.digihealth.anesthesia.operProceed.dao.**
+com.digihealth.anesthesia.operProceed.datasync.**
+com.digihealth.anesthesia.operProceed.formbean.**
+com.digihealth.anesthesia.operProceed.po.**
+com.digihealth.anesthesia.operProceed.service.**
+com.digihealth.anesthesia.pacu.core.**
+com.digihealth.anesthesia.pacu.datasync.**
+com.digihealth.anesthesia.research.controller.**
+com.digihealth.anesthesia.research.dao.**
+com.digihealth.anesthesia.research.formbean.**
+com.digihealth.anesthesia.research.po.**
+com.digihealth.anesthesia.research.service.**
+com.digihealth.anesthesia.research.utils.**
+com.digihealth.anesthesia.sco.dao.**
+com.digihealth.anesthesia.sco.po.**
+com.digihealth.anesthesia.sysMng.controller.**
+com.digihealth.anesthesia.sysMng.dao.**
+com.digihealth.anesthesia.sysMng.formbean.**
+com.digihealth.anesthesia.sysMng.po.**
+com.digihealth.anesthesia.sysMng.service.**
+com.digihealth.anesthesia.tmp.controller.**
+com.digihealth.anesthesia.tmp.dao.**
+com.digihealth.anesthesia.tmp.formbean.**
+com.digihealth.anesthesia.tmp.po.**
+com.digihealth.anesthesia.tmp.service.**
+com.digihealth.anesthesia.websocket.**
+org.tempuri.**
+org.tempurl.**
+swagger.**
+</entry>
+<entry key="profiler.settings.instrument.empty.methods">false</entry>
+<entry key="myeclipse.profiling.mode">0</entry>
+<entry key="profiler.settings.istrument.getter.setter.methods">false</entry>
+<entry key="app_preset_prof_preset_samplingRate_s">100</entry>
+<entry key="app_preset_prof_preset_filterMode_s">true</entry>
+<entry key="app_preset_prof_preset_selector"/>
+<entry key="app_preset_prof_preset_refreshRate_s">1000</entry>
+<entry key="app_preset_prof_preset_runnables_p">true</entry>
+<entry key="app_preset_prof_preset_filterMode_p">false</entry>
+<entry key="app_preset_prof_preset_memoryMode_p">true</entry>
+</properties>

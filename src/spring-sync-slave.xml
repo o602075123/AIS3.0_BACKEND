@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jms="http://www.springframework.org/schema/jms"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		 http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms-4.0.xsd
+		 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd"
+	default-lazy-init="true">
+
+	<description>slave</description>
+	
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <constructor-arg name="dataSource" ref="dataSource" />
+    </bean>
+    
+    <bean id="msgProcessReceiver" class="com.digihealth.anesthesia.common.task.MsgProcessReceiver"/>
+	
+	<!-- 每分钟执行 -->
+	<task:scheduler id="dataSyncScheduler" pool-size="1"/>  
+    <task:scheduled-tasks scheduler="dataSyncScheduler">   
+        <task:scheduled ref="msgProcessReceiver" method="job" cron="0 * * * * ?" />  
+    </task:scheduled-tasks> 
+    
+    <!-- 每分钟执行 -->
+<!-- 	<task:scheduler id="dataSyncScheduler" pool-size="1"/>  
+    <task:scheduled-tasks scheduler="dataSyncScheduler">   
+        <task:scheduled ref="delDatMonitorDateTask" method="job" cron="0 * * * * ?" />  
+    </task:scheduled-tasks> -->
+
+    
+    <!-- 删除obser_data表的数据 -->
+    <bean id="delDatMonitorDateTask" class="com.digihealth.anesthesia.common.task.DelDatMonitorDateTask"/>
+    <task:scheduler id="job" pool-size="1"/> 
+    <task:scheduled-tasks>
+    	<task:scheduled ref="delDatMonitorDateTask" method="job" cron="0 0 3 * * ?" />
+    </task:scheduled-tasks>
+        
+    <bean id="delMessageWorkstationDateTask" class="com.digihealth.anesthesia.common.task.DelMessageWorkstationDateTask"/>    
+    <task:scheduler id="job" pool-size="1"/> 
+    <task:scheduled-tasks>
+    	<task:scheduled ref="delMessageWorkstationDateTask" method="job" cron="0 0 4 * * ?" />
+    </task:scheduled-tasks>
+</beans>
